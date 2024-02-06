@@ -1,0 +1,30 @@
+header{
+    height: 60px;
+    background-color: rgb(114, 53, 132);
+}
+
+#menu{
+    height: 900px;
+    border: 5px solid blue;
+}
+
+#list{
+    width: 20%;
+    height: 600px;
+    border: 5px solid green;
+    float: left;
+    margin-left: 10%;
+}
+
+#items{
+    width: 60%;
+    height: 800px;
+    border: 5px solid yellowgreen;
+    float: left;
+    overflow: scroll;
+}
+
+footer{
+    height: 60px;
+    border: 5px solid purple;
+}
