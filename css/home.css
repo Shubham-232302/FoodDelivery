@@ -33,5 +33,71 @@ footer{
     height: 600px;
     /* border: 5px solid red; */
     background-color: aqua;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1%;
 
+}
+
+.social_icon{
+    height: 50px;
+    width: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#brand{
+    color: antiquewhite;
+    font-size: 30px;
+    float: left;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+#social{
+    float: right;
+    margin-right: 3%;
+    margin-top: 4px;
+
+}
+
+#logo{
+    height: 160px;
+    width: 160px;
+    margin-left: 43%;
+    background-color: white;
+    position: absolute;
+    margin-top: 1%;
+    border-radius: 50%;
+}
+
+#logo > span{
+    margin-top: 18%;
+    margin-left: 7%;
+    position: absolute;
+    font-size: 90px;
+}
+
+#heading{
+margin-top: 10%;
+position:absolute;
+margin-left: 37%;
+color: rgb(24, 4, 95);
+}
+
+#dropdown{
+    margin-top: 17%;
+    position: absolute;
+    margin-left: 27%;
+    /* border: 5px solid red; */
+    height: 60px;
+    width: 50%;
+}
+
+.select{
+    width: 45%;
+    height: 60px;
+    font-size: 20px;
 }
