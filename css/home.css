@@ -1,5 +1,6 @@
 body{
     margin: auto;
+    background-color: aqua;
 }
 
 header{
@@ -170,3 +171,79 @@ color: rgb(24, 4, 95);
     /* margin-bottom: 10px; */
     width: 100%;
 }
+
+
+/* @media screen and (max-width: 1536px) {
+    body {
+      background-color: blue;
+    }
+    /* .tileContainer{
+        width: 45%;
+    } */
+  /* } */
+
+  @media screen and (max-width: 1100px) {
+    /* body {
+      background-color: blue;
+    } */
+    .tileContainer{
+width: 45%;
+    }
+    #heading{
+        margin-top: 20%;
+        margin-left: 37%;
+    }
+    #dropdown{
+        margin-top: 30%;
+        position: absolute;
+        margin-left: 27%;
+        /* border: 5px solid red; */
+        height: 60px;
+        width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    /* body {
+      background-color: blue;
+    } */
+    .tileContainer{
+        width: 90%;
+            }
+            #heading{
+                margin-top: 40%;
+                margin-left: 37%;
+            }
+            #dropdown{
+                margin-top: 60%;
+                position: absolute;
+                margin-left: 27%;
+                /* border: 5px solid red; */
+                height: 60px;
+                width: 50%;
+            }
+  }
+/* 
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: blue;
+    }
+  } */
+
+  /* @media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+  } */
