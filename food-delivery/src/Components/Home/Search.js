@@ -6,7 +6,22 @@ class Search extends Component{
     render(){
         return(
             <>
-            <h1>Search</h1>
+                <div id="search">
+                    <div id="logo">
+                        <span>FD!</span>
+                    </div>
+                    <div id="heading">
+                        <h1>Search Place Near To You</h1>
+                    </div>
+                    <div id="dropdown">
+                        <select className="select">
+                            <option>----select city----</option>
+                        </select>
+                        <select className="select">
+                            <option >----select restaurents----</option>
+                        </select>
+                    </div>
+                </div>
             </>
         )
     }

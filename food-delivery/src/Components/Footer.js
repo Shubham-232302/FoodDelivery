@@ -3,9 +3,9 @@ import './footer.css'
 
 const Footer =() =>{
     return(
-        <>
-        <footer>&copy; Footer</footer>
-        </>
+        <footer>
+        &copy;Food Delivery 2024
+        </footer>
     )
 }
 
