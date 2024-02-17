@@ -9,7 +9,8 @@ class Search extends Component{
         console.log("inside constructor")
         super()
         this.state = {
-            location:''
+            location:'',
+            add:''
         }
     }
 
@@ -39,6 +40,31 @@ class Search extends Component{
     }
     }
 
+    renderAdd = (data) =>{
+        console.log(data.restaurant_id)
+        if (data){
+        return data.map((item) =>
+        {
+            return(
+            <option value={item.restaurant_id} key={item.restaurant_id}>{item.restaurant_name} | {item.address}</option>
+            )
+        })
+    }
+    }
+
+    processState = (event) =>{
+        console.log(event.target.value)
+        fetch(`${base_url}/restaurant?stateId=${event.target.value}`, {method:"GET"})
+        .then((res) => res.json())
+        .then((data) => {
+            this.setState({
+                add:data
+            })
+        })
+        }
+
+
+
     render(){
         console.log("inside render")
         return(
@@ -51,13 +77,15 @@ class Search extends Component{
                         <h1>Search Place Near To You</h1>
                     </div>
                     <div id="dropdown">
-                        <select className="select">
+                        <select className="select" onChange={this.processState}>
                             <option>----select city----</option>
                             {this.renderState(this.state.location)}
                         </select>
                         <select className="select">
                             <option >----select restaurents----</option>
+                            {this.renderAdd(this.state.add)}
                         </select>
+                        
                     </div>
                 </div>
             </>
