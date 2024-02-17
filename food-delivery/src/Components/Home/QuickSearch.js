@@ -15,13 +15,13 @@ class QuickSearch extends Component{
         //         </span>
         //     <div>
         //     <a href="#">
-        //         <div className="tileContainer">
-        //             <div className="tileImageComponent">
+        //         <div classNameName="tileContainer">
+        //             <div classNameName="tileImageComponent">
         //             <img src="../background.jpg" alt="lunch"/>
         //             </div>
-        //         <div className="tileComponent">
-        //             <div className="tileContainer1">Lunch</div>
-        //             <div className="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
+        //         <div classNameName="tileComponent">
+        //             <div classNameName="tileContainer1">Lunch</div>
+        //             <div classNameName="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
                         
         //         </div>
         //         </div>
@@ -29,52 +29,52 @@ class QuickSearch extends Component{
 
         //     </div>
         //     <a href="#">
-        //     <div className="tileContainer">
-        //         <div className="tileImageComponent">
+        //     <div classNameName="tileContainer">
+        //         <div classNameName="tileImageComponent">
         //             <img src="../background.jpg" alt="lunch"/>
         //            </div>
-        //            <div className="tileComponent">
-        //                <div className="tileContainer1">Lunch</div>
-        //                <div className="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
+        //            <div classNameName="tileComponent">
+        //                <div classNameName="tileContainer1">Lunch</div>
+        //                <div classNameName="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
                            
         //            </div>
 
         //     </div>
         // </a>
         //     <a href="#">
-        //     <div className="tileContainer">
-        //         <div className="tileImageComponent">
+        //     <div classNameName="tileContainer">
+        //         <div classNameName="tileImageComponent">
         //             <img src="../background.jpg" alt="lunch"/>
         //            </div>
-        //            <div className="tileComponent">
-        //                <div className="tileContainer1">Lunch</div>
-        //                <div className="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
+        //            <div classNameName="tileComponent">
+        //                <div classNameName="tileContainer1">Lunch</div>
+        //                <div classNameName="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
                            
         //            </div>
 
         //     </div>
         // </a>
         //     <a href="#">
-        //     <div className="tileContainer">
-        //         <div className="tileImageComponent">
+        //     <div classNameName="tileContainer">
+        //         <div classNameName="tileImageComponent">
         //             <img src="../background.jpg" alt="lunch"/>
         //            </div>
-        //            <div className="tileComponent">
-        //                <div className="tileContainer1">Lunch</div>
-        //                <div className="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
+        //            <div classNameName="tileComponent">
+        //                <div classNameName="tileContainer1">Lunch</div>
+        //                <div classNameName="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
                            
         //            </div>
 
         //     </div>
         // </a>
         //     <a href="#">
-        //     <div className="tileContainer">
-        //         <div className="tileImageComponent">
+        //     <div classNameName="tileContainer">
+        //         <div classNameName="tileImageComponent">
         //             <img src="../background.jpg" alt="lunch"/>
         //            </div>
-        //            <div className="tileComponent">
-        //                <div className="tileContainer1">Lunch</div>
-        //                <div className="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
+        //            <div classNameName="tileComponent">
+        //                <div classNameName="tileContainer1">Lunch</div>
+        //                <div classNameName="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
                            
         //            </div>
 
@@ -82,13 +82,13 @@ class QuickSearch extends Component{
         // </a>
 
         //     <a href="#">
-        //     <div className="tileContainer">
-        //         <div className="tileImageComponent">
+        //     <div classNameName="tileContainer">
+        //         <div classNameName="tileImageComponent">
         //             <img src="../background.jpg" alt="lunch"/>
         //            </div>
-        //            <div className="tileComponent">
-        //                <div className="tileContainer1">Lunch</div>
-        //                <div className="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
+        //            <div classNameName="tileComponent">
+        //                <div classNameName="tileContainer1">Lunch</div>
+        //                <div classNameName="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
                            
         //            </div>
 
@@ -104,13 +104,13 @@ class QuickSearch extends Component{
         </span>
         <div>
         {/* <a href="#">
-            <div class="tileContainer">
-                <div class="tileImageComponent">
+            <div className="tileContainer">
+                <div className="tileImageComponent">
                     <img src="https://i.ibb.co/bLKQxHs/background.jpg" alt="lunch"/>
                    </div>
-                   <div class="tileComponent">
-                       <div class="tileContainer1">Lunch</div>
-                       <div class="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
+                   <div className="tileComponent">
+                       <div className="tileContainer1">Lunch</div>
+                       <div className="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
                            
                    </div>
 
@@ -119,65 +119,65 @@ class QuickSearch extends Component{
 
             </div>
             <a href="#">
-            <div class="tileContainer">
-                <div class="tileImageComponent">
+            <div className="tileContainer">
+                <div className="tileImageComponent">
                     <img src="https://i.ibb.co/bLKQxHs/background.jpg" alt="lunch"/>
                    </div>
-                   <div class="tileComponent">
-                       <div class="tileContainer1">Lunch</div>
-                       <div class="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
+                   <div className="tileComponent">
+                       <div className="tileContainer1">Lunch</div>
+                       <div className="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
                            
                    </div>
 
             </div>
         </a>
             <a href="#">
-            <div class="tileContainer">
-                <div class="tileImageComponent">
+            <div className="tileContainer">
+                <div className="tileImageComponent">
                     <img src="https://i.ibb.co/bLKQxHs/background.jpg" alt="lunch"/>
                    </div>
-                   <div class="tileComponent">
-                       <div class="tileContainer1">Lunch</div>
-                       <div class="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
+                   <div className="tileComponent">
+                       <div className="tileContainer1">Lunch</div>
+                       <div className="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
                            
                    </div>
 
             </div>
         </a>
             <a href="#">
-            <div class="tileContainer">
-                <div class="tileImageComponent">
+            <div className="tileContainer">
+                <div className="tileImageComponent">
                     <img src="https://i.ibb.co/bLKQxHs/background.jpg" alt="lunch"/>
                    </div>
-                   <div class="tileComponent">
-                       <div class="tileContainer1">Lunch</div>
-                       <div class="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
+                   <div className="tileComponent">
+                       <div className="tileContainer1">Lunch</div>
+                       <div className="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
                            
                    </div>
 
             </div>
         </a>
             <a href="#">
-            <div class="tileContainer">
-                <div class="tileImageComponent">
+            <div className="tileContainer">
+                <div className="tileImageComponent">
                     <img src="https://i.ibb.co/bLKQxHs/background.jpg" alt="lunch"/>
                    </div>
-                   <div class="tileComponent">
-                       <div class="tileContainer1">Lunch</div>
-                       <div class="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
+                   <div className="tileComponent">
+                       <div className="tileContainer1">Lunch</div>
+                       <div className="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
                            
                    </div>
 
             </div>
         </a>
             <a href="#">
-            <div class="tileContainer">
-                <div class="tileImageComponent">
+            <div className="tileContainer">
+                <div className="tileImageComponent">
                     <img src="https://i.ibb.co/bLKQxHs/background.jpg" alt="lunch"/>
                    </div>
-                   <div class="tileComponent">
-                       <div class="tileContainer1">Lunch</div>
-                       <div class="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
+                   <div className="tileComponent">
+                       <div className="tileContainer1">Lunch</div>
+                       <div className="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
                            
                    </div>
 
@@ -185,13 +185,13 @@ class QuickSearch extends Component{
         </a>
 
             <a href="#">
-            <div class="tileContainer">
-                <div class="tileImageComponent">
+            <div className="tileContainer">
+                <div className="tileImageComponent">
                     <img src="https://i.ibb.co/bLKQxHs/background.jpg" alt="lunch"/>
                    </div>
-                   <div class="tileComponent">
-                       <div class="tileContainer1">Lunch</div>
-                       <div class="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
+                   <div className="tileComponent">
+                       <div className="tileContainer1">Lunch</div>
+                       <div className="tileContainer2">Eating lunch has a big impact on your mental and physical health. Skipping lunch can cause stomach, memory, weight issues, and more. Order now!</div>
                            
                    </div>
 
