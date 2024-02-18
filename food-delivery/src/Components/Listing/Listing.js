@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import axios from 'axios'
+import ListingDisplay from './ListingDisplay'
 
 import './listing.css'
 
@@ -18,9 +19,11 @@ class Listing extends Component{
             <>
             <div className="row">
                 <div id="mainListing">
-                    <div id="filter ">
+                    <div id="filter">
+                        
 
                     </div>
+                    <ListingDisplay listData = {this.state.reastaurantList}/>
                 </div>
             </div>
             
@@ -31,8 +34,9 @@ class Listing extends Component{
 
     componentDidMount(){
         let mealId = this.props.match.params.mealId
+        // axios.get(`${base_url}/restaurant?mealtype_id=${mealId}`)
         axios.get(`${base_url}/restaurant?mealtype_id=${mealId}`)
-        .then((res) =>this.setState({reastaurantList:res}))
+        .then((res) =>this.setState({reastaurantList:res.data}))
     }
 }
 
