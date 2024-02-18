@@ -4,6 +4,23 @@ import './listing.css'
 
 const ListingDisplay = (props) =>{
 
+    const renderMealTypesLabel = ({mealType}) =>{
+        console.log("meal-type",mealType)
+        
+        if (mealType) {
+        if (mealType.length){
+            console.log("meal-type",mealType)
+            return mealType.map((item)=>{
+                return(
+                    <span className='label label-primary' key={item.mealtype_id}>
+                    {item.mealtype_name}
+                    </span>
+                )
+            })
+        }
+    }
+}
+
     const renderData =({listData}) =>{
         console.log("inside render listing display")
         if(listData){
@@ -23,10 +40,27 @@ const ListingDisplay = (props) =>{
                                         <Link to={`/details?restId=${item.restaurant_id}`}>
                                             {item.restaurant_name}
                                         </Link>
-                                        <div className="">{item.address}</div>
-                                        <div className="">{item.rating}</div>
-                                        <div className="">Rs. {item.cost}</div>
+                                        <div className="city_name">{item.address}</div>
+                                        <div className="city_name">{item.rating}</div>
+                                        <div className="city_name">Rs. {item.cost}</div>
+                                        <div className='labelDiv'>
+                                    </div>
 
+                                    <div className='labelDiv'>
+                                        {item.mealTypes.map((mealtype, index) => (
+                                            <span key={index} className='label label-warning'>
+                                                {mealtype.mealtype_name}
+                                            </span>
+                                        ))} 
+                                    </div>
+
+                                    <div className='labelDiv'>
+                                        {item.cuisines.map((cuisine, index) => (
+                                            <span key={index} className='label label-warning'>
+                                                {cuisine.cuisine_name}
+                                            </span>
+                                        ))} 
+                                    </div>
                                     </div>
 
                                 </div>
