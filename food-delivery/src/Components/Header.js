@@ -3,11 +3,22 @@ import './header.css'
 import {Link} from 'react-router-dom'
 
 const Header =() =>{
+
+    const dict = {
+        divTemp:{
+            float:'left'        
+        }
+    }
+
     return(
         <>
         <header>
             <div id="brand">
                 Food Delivery
+            </div>
+            <div>
+                <Link to="/"> <button className='btn btn-success' style={dict.divTemp}>Home</button>
+                </Link>
             </div>
             <div id="social">
                 <Link to ="/" className ="btn btn-success">
