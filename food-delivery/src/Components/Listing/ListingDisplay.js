@@ -4,22 +4,7 @@ import './listing.css'
 
 const ListingDisplay = (props) =>{
 
-    const renderMealTypesLabel = ({mealType}) =>{
-        console.log("meal-type",mealType)
-        
-        if (mealType) {
-        if (mealType.length){
-            console.log("meal-type",mealType)
-            return mealType.map((item)=>{
-                return(
-                    <span className='label label-primary' key={item.mealtype_id}>
-                    {item.mealtype_name}
-                    </span>
-                )
-            })
-        }
-    }
-}
+    
 
     const renderData =({listData}) =>{
         console.log("inside render listing display")
