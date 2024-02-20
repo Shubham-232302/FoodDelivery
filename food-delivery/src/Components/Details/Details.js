@@ -1,10 +1,11 @@
 import React,{Component} from "react";
-import Header from '../Header'
+// import Header from '../Header'
 import './deatails.css'
 import axios from 'axios'
 import {Link} from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import MenuDisplay from './MenuDetails'
 
 
 const base_url = 'http://3.17.216.66:4000'
@@ -16,10 +17,18 @@ class Details extends Component{
         super()
         this.state={
             details:'',
+            menuList:'',
+            userItem:'',
+
             mealId:sessionStorage.getItem('mealId')?sessionStorage.getItem('mealId'):1
         }
 
     }
+
+    addToCart = (data) =>{
+        this.setState({userItem:data})
+    }
+
     render(){
         let {details} = this.state;
         return(
@@ -74,8 +83,8 @@ class Details extends Component{
                     </button>
                     <div className='col-md-12'>
                         <center><h2>Menu</h2></center>
-                        {/* <MenuDisplay menudata={this.state.menuList} */}
-                        {/* finalOrder={(data) => {this.addToCart(data)}}/> */}
+                        <MenuDisplay menudata={this.state.menuList}
+                        finalOrder={(data) => {this.addToCart(data)}}/>
                     </div>
             </div>
             </>
@@ -86,7 +95,8 @@ class Details extends Component{
     async componentDidMount(){
         let restId = this.props.location.search.split("=")[1]
         let response = await axios.get(`${base_url}/details/${restId}`)
-        this.setState({details:response.data[0]})
+        let menu = await axios.get(`${base_url}/menu/${restId}`)
+        this.setState({details:response.data[0], menuList:menu.data})
     }
 }
 
