@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 import axios from 'axios'
 
-const url = "http://3.17.216.66:4000/filter/4?cuisine=1"
+const url = "http://3.17.216.66:4000/filter"
 
 class CuisineFilter extends Component{
 
@@ -12,7 +12,7 @@ class CuisineFilter extends Component{
         if (cuisineId === ""){
             cuisineUrl = `${url}/${mealId}`
         }else{
-            cuisineUrl = `${url}/${mealId}?cusine=${cuisineId}`
+            cuisineUrl = `${url}/${mealId}?cuisine=${cuisineId}`
         }
         axios.get(cuisineUrl)
         .then((res) => {this.props.resPerCuisine(res.data)})
