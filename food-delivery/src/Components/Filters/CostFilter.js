@@ -27,25 +27,25 @@ class CostFilter extends Component{
             <center><h3>Cost Filter</h3></center>
             <div style={{margin: '15%'}} onChange={this.costFilter}>
                 <label className='radio'>
-                    <input type='radio' name="cuisine" value =""/>All
+                    <input type='radio' name="cost" value =""/>All
                 </label>
                 <label className='radio'>
-                    <input type='radio' name="cuisine" value ="0-300"/>0-300
+                    <input type='radio' name="cost" value ="0-300"/>0-300
                 </label>
                 <label className='radio'>
-                    <input type='radio' name="cuisine" value ="301-400"/>301-400
+                    <input type='radio' name="cost" value ="301-400"/>301-400
                 </label>
                 <label className='radio'>
-                    <input type='radio' name="cuisine" value ="401-500"/>401-500
+                    <input type='radio' name="cost" value ="401-500"/>401-500
                 </label>
                 <label className='radio'>
-                    <input type='radio' name="cuisine" value ="501-600"/>501-600
+                    <input type='radio' name="cost" value ="501-600"/>501-600
                 </label>
                 <label className='radio'>
-                    <input type='radio' name="cuisine" value ="601-1000"/>601-1000
+                    <input type='radio' name="cost" value ="601-1000"/>601-1000
                 </label>
                 <label className='radio'>
-                    <input type='radio' name="cuisine" value ="1001-5000"/>1001-5000
+                    <input type='radio' name="cost" value ="1001-5000"/>1001-5000
                 </label>
             </div>
             </>
