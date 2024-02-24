@@ -1,13 +1,15 @@
 import React,{Component} from 'react'
 import './placeOrder.css'
 
+const base_url = 'http://3.17.216.66:4000'
+const dummy_url = 'http://localhost:3322/orders'
 
 class PlaceOrder extends Component{
 
     constructor(props){
         super(props)
         this.state={
-            id:Math.floor(Math.random*1000),
+            id:Math.floor(Math.random()*1000),
             hotel_name: this.props.match.params.restName,
             name:'shubham',
             email:'s@gmail.com',
@@ -20,6 +22,37 @@ class PlaceOrder extends Component{
     }
 
     handleChange = (event) =>{
+        this.setState({[event.target.name] : event.target.value})
+    }
+
+    placeOrder = () =>{
+        console.log(this.state)
+        let obj = this.state
+        obj.menuItem = sessionStorage.getItem('menu')
+        console.log(obj)
+
+        fetch(dummy_url, {method:"POST",
+               headers:{
+                'accept':"application/json",
+                'Content-Type':"application/json"
+               },
+
+            body: JSON.stringify(obj)  })
+            .then(this.props.history.push('/viewBooking'))
+    }
+
+    renderItem = (data) =>{
+        if(data){
+            return data.map((item, index) =>{
+                return(
+                    <div className='orderItem' key={index}>
+                        <img src={item.menu_image} alt={item.menu_name}/>
+                        <h3>{item.menu_name}</h3>
+                        <h4>cost: {item.menu_price}</h4>
+                    </div>
+                )
+            })
+        }
 
     }
 
@@ -52,12 +85,13 @@ class PlaceOrder extends Component{
                                 <label>Address</label>
                                 <input className='form-control' name='address' value={this.state.address} onChange={this.handleChange}/>
                             </div>
+                            {this.renderItem(this.state.menuItem)}
                             <div className='row'>
                                 <div className='col-md-12'>
                                     <h2>Total price of the items is {this.state.cost}</h2>
                                 </div>
                             </div>
-                            <button className='btn btn-primary'>Place Order</button>
+                            <button className='btn btn-primary' onClick={this.placeOrder}>Place Order</button>
                         </div>
 
                     </div>
@@ -68,6 +102,34 @@ class PlaceOrder extends Component{
             </div>
             </>
         )
+    }
+    componentDidMount(){
+        let menuItem = sessionStorage.getItem('menu')
+        console.log(menuItem)
+        let orderId = []
+        menuItem.split(',').map((item)=>{
+            orderId.push(parseInt(item))
+            return ''
+        }) 
+        console.log(orderId)
+        fetch(`${base_url}/menuItem`, {method:'POST', headers: 
+                {
+                    'accept':'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(orderId)})
+                .then((res) => res.json())
+                .then((data)=>{
+                    console.log("data1",data)
+                    let total = 0
+                    data.map((item)=>{
+                        total += parseFloat(item.menu_price)
+                        return ''
+                    })
+                    console.log("data------>",data)
+                    this.setState({menuItem:data, cost:total})
+                })
+
     }
 }
 
