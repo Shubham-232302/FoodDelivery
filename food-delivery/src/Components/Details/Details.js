@@ -29,6 +29,12 @@ class Details extends Component{
         this.setState({userItem:data})
     }
 
+    proceed = () =>{
+        sessionStorage.setItem('menu', this.state.userItem);
+        this.props.history.push(`/placeOrder/${this.state.details.restaurant_name}`)
+
+    }
+
     render(){
         let {details} = this.state;
         return(

@@ -5,6 +5,8 @@ import Footer from './Footer'
 import Home from './Home/Home'
 import Listing from './Listing/Listing'
 import Details from './Details/Details'
+import PlaceOrder from './Orders/PlaceOrder'
+import ViewOrder from './Orders/ViewOrder'
 
 const Routing = () =>{
     return(
@@ -14,6 +16,8 @@ const Routing = () =>{
                 <Route exact path ="/" component ={Home}/>
                 <Route exact path ="/listing/:mealId" component ={Listing}/>
                 <Route exact path ="/details" component ={Details}/>
+                <Route path ="/placeOrder/:restName" component={PlaceOrder}/>
+                <Route exact path ="/viewBooking" component={ViewOrder}/>
                 <Footer/>
             {/* </Route> */}
         
