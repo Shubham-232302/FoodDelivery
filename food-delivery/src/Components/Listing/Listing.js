@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import axios from 'axios'
 import ListingDisplay from './ListingDisplay'
+import CuisineFilter from '../Filters/CuisineFilter'
 
 import './listing.css'
 
@@ -20,7 +21,8 @@ class Listing extends Component{
             <div className="row">
                 <div id="mainListing">
                     <div id="filter">
-                        
+                        {/* <hr/> */}
+                        <CuisineFilter/>
 
                     </div>
                     <ListingDisplay listData = {this.state.reastaurantList}/>
