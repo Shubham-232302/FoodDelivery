@@ -3,7 +3,7 @@ import axios from 'axios'
 import ListingDisplay from './ListingDisplay'
 import CuisineFilter from '../Filters/CuisineFilter'
 import CostFilter from "../Filters/CostFilter";
-
+import Header from '../Header'
 import './listing.css'
 
 const base_url = 'http://3.17.216.66:4000'
@@ -27,6 +27,7 @@ class Listing extends Component{
     render(){
         return(
             <>
+            <Header/>
             <div className="row">
                 <div id="mainListing">
                     <div id="filter">

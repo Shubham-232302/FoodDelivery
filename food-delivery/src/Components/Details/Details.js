@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-// import Header from '../Header'
+import Header from '../Header'
 import './deatails.css'
 import axios from 'axios'
 import {Link} from 'react-router-dom';
@@ -41,7 +41,7 @@ class Details extends Component{
             // const details = this.state.details
             
             <>
-                {/* <Header/> */}
+                <Header/>
                 <div className='main'>
                     <div className='tileImage'>
                         <div className='imageClass'>

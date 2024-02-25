@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
 import axios from 'axios'
 import './placeOrder.css'
+import Header from '../Header'
 import Display from './DisplayOrder'
 
 const dummy_url = 'http://localhost:3322/orders'
@@ -18,7 +19,10 @@ class ViewOrder extends Component{
 
     render(){
         return(
+            <>
+            <Header/>
             <Display orderData = {this.state.orders}/>
+            </>
         )
     }
 
